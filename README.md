@@ -1,2 +1,2 @@
-# movieapp
+# MovieApp
 Still WIP
