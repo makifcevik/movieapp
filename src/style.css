@@ -162,3 +162,26 @@ body {
     margin-bottom: 40px;
 }
 
+.plans {
+    text-align: center;
+    margin-left: 30px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.plan {
+    text-align: center;
+    float: left;
+    background-color: #EDF5F7;
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
