@@ -2,12 +2,22 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    position: absolute;
+    top: 0;
     margin: 0;
     font-family: 'Lato', sans-serif;
 }
 
 .main-header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
     background-color: #FC997C;
 }
 
@@ -52,16 +62,19 @@ body {
 }
 
 .welcome {
+    position: relative;
     background-image: url("../../resources/background-mountain.jpg");
     background-position: center;
     height: 400px;
 }
 
 .welcome h1 {
-    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     font-size: 40px;
     margin: 0;
-    padding-top: 50px;
+    transform: translate(-50%, -50%);
 }
 
 .how-it-works {
@@ -158,11 +171,10 @@ body {
     box-shadow: -5px 5px 10px 2px rgba(100, 100, 100, 0.7);
 }
 
-.inner-plan a {
-}
-
 .recommended-plan {
     background-color: #396EB0!important;
+    position: relative;
+    bottom: 30px;
 }
 
 .recommended-badge {
@@ -172,5 +184,24 @@ body {
     padding: 14px;
 }
 
+#backtotop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+#backtotop i {
+    color: #FC997C;
+    font-size: 45px;
+    transition: ease .5s;
+}
+
+#backtotop i:hover {
+    color: #396EB0;
+}
+
+#backtotop i:active{
+    color: #FC997C;
+}
 
 
